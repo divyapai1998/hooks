@@ -15,6 +15,7 @@ import UseffctfetchData from './UseffctfetchData';
 import ContextC from './ContextC';
 import { ContextProvider } from './UserContext';
 import React, { Component } from 'react'
+import UseRedceCounter from './UseRedceCounter';
 
 const UserContext = React.createContext();
 const ChannelContext = React.createContext();
@@ -35,12 +36,12 @@ function App() {
       {/* <UseffctMists /> */}
       {/* <UseffctfetchData /> */}
       {/* <ContextProvider value = 'World'><ContextC/></ContextProvider> */}
-      <UserContext.Provider value = 'Hey'>
+      {/* <UserContext.Provider value = 'Hey'>
         <ChannelContext.Provider value = 'Channel Context Hey'>
         <ContextC/>
         </ChannelContext.Provider>
-      </UserContext.Provider>
-
+      </UserContext.Provider> */}
+      <UseRedceCounter/>
       
     </div>
   );
